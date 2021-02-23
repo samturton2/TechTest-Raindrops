@@ -42,8 +42,36 @@ def raindrops(n):
 - _Note at the bottom of the `main.py` file there is a small function that can run when I ran the file directly._
 
 ### Testing
-- The tests can by run using either pytest, or running the `tests.py` file directly.
+- The tests can by run using either pytest, or unittest
 - To carry it out you will need to run the following command in the terminal
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
+
+#### pytest
+- To run pytest Type the following command
+```bash
+python -m pytest -v tests.py
+```
+![](img/pytest.png)
+
+#### unitest
+- To run unitest, just run the `tests.py` file on python
+```bash
+python tests.py
+```
+![](img/unittest.png)
+
+#### Unit Testing
+- The tests were set up in a series of unit tests inside the Tests class.
+- The tests were made to test lots of possible outcomes that the function would supposedly achieve.
+- This was done using pythons assertEqual, and assertRaises functions.
+- The tests were made to account for a range of possibilities :
+    + The examples given in the Documentation
+    + Single, Double, and triple word concatinations
+    + Large numbers
+    + Negative numbers
+    + Floats
+    + Strings (tested expecting a type error)
+
+- The development of the code was done in a TDD manner, Writing failing tests to go back and modify the code, so that it was fully functional for as many inputs as possible.
