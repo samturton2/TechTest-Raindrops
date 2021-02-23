@@ -3,6 +3,7 @@ from main import raindrops
 
 # Import unittest
 import unittest
+import pytest
 
 # Create class to apply testing
 class Tests(unittest.TestCase):
@@ -12,6 +13,8 @@ class Tests(unittest.TestCase):
 		self.assertEqual(raindrops(28), "Plong")
 		self.assertEqual(raindrops(30), "PlingPlang")
 		self.assertEqual(raindrops(34), 34)
+
+	# Run more tests, testing all output options
 
 # Run unit tests if test file ran
 if __name__ == "__main__":

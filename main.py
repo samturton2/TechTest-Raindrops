@@ -20,10 +20,10 @@ def raindrops(n):
 	else:
 		return n
 
-# Test the function with some inputs
+# Use the function if ran from this file
 if __name__ == "__main__":
 	
 	num=""
 	while num != exit:
-		num = int(input("pick num: "))
+		num = int(input("pick a number / type 'exit' to exit: "))
 		print(raindrops(num))
