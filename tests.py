@@ -35,7 +35,7 @@ class Tests(unittest.TestCase):
 	def test_obscure(self):
 		self.assertEqual(raindrops(-5), "Plang")
 		self.assertEqual(raindrops(-34.4594), "-34.4594")
-		self.assertEqual(raindrops("ojngse"), "ojngse")
+		self.assertEqual(raindrops("ojngse"), "please enter a number")
 
 
 # Run unit tests if test file ran
