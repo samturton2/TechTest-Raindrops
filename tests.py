@@ -3,7 +3,6 @@ from main import raindrops
 
 # Import unittest
 import unittest
-import pytest
 
 # Create class to apply testing
 class Tests(unittest.TestCase):
@@ -35,7 +34,11 @@ class Tests(unittest.TestCase):
 	def test_obscure(self):
 		self.assertEqual(raindrops(-5), "Plang")
 		self.assertEqual(raindrops(-34.4594), "-34.4594")
-		self.assertEqual(raindrops("ojngse"), "please enter a number")
+
+	# Test for string passing
+	def test_string(self):
+		with self.assertRaises(TypeError):
+			raindrops("Pling")
 
 
 # Run unit tests if test file ran
