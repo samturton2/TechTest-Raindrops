@@ -26,7 +26,7 @@ def raindrops(n):
 # Use the function if ran from this file
 if __name__ == "__main__":
 	num = input("please enter a number: ")
-	if num.isdigit()
+	if num.isdigit():
 		print(raindrops(int(num)))
 	else:
 		print(raindrops(num))
