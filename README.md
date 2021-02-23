@@ -68,10 +68,10 @@ python tests.py
 - This was done using pythons assertEqual, and assertRaises functions.
 - The tests were made to account for a range of possibilities :
     + The examples given in the Documentation
-    + Single, Double, and triple word concatinations
+    + Single, Double and triple word concatinations
     + Large numbers
     + Negative numbers
     + Floats
-    + Strings (tested expecting a type error)
+    + Strings, lists and tuples (tested expecting a type error)
 
 - The development of the code was done in a TDD manner, Writing failing tests to go back and modify the code, so that it was fully functional for as many inputs as possible.

@@ -30,18 +30,23 @@ class Tests(unittest.TestCase):
 		self.assertEqual(raindrops(9366046200), "PlingPlangPlong")
 		self.assertEqual(raindrops(1016850019), "1016850019")
 
-	# Test for more obscure outputs
+	# Test for more obscure inputs
 	def test_obscure(self):
 		self.assertEqual(raindrops(-5), "Plang")
 		self.assertEqual(raindrops(-34.4594), "-34.4594")
 
-	# Test for string passing
-	def test_string(self):
+	# Test for TypeErrors
+	def test_type_error(self):
+		# Test for string passing
 		with self.assertRaises(TypeError):
 			raindrops("Pling")
-
+		# Test for list passing
+		with self.assertRaises(TypeError):
+			raindrops([2, 3, 5, 234])
+		# Test for tuple passing
+		with self.assertRaises(TypeError):
+			raindrops((3, 5))
 
 # Run unit tests if test file ran
 if __name__ == "__main__":
 	unittest.main()
-
