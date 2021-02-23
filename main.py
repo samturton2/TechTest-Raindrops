@@ -19,3 +19,11 @@ def raindrops(n):
 		return output
 	else:
 		return n
+
+# Test the function with some inputs
+if __name__ == "__main__":
+	
+	num=""
+	while num != exit:
+		num = int(input("pick num: "))
+		print(raindrops(num))
