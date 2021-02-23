@@ -11,7 +11,7 @@ class Tests(unittest.TestCase):
 	def test_examples(self):
 		self.assertEqual(raindrops(28), "Plong")
 		self.assertEqual(raindrops(30), "PlingPlang")
-		self.assertEqual(raindrops(34), "34")
+		self.assertEqual(raindrops(34), 34)
 
 # Run unit tests if test file ran
 if __name__ == "__main__":
