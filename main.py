@@ -5,11 +5,9 @@ def raindrops(n):
 	# Return Pling in output if 3 is a factor
 	if n%3 == 0:
 		output += "Pling"
-
 	# Return Plang in output if 5 is a factor
 	if n%5 == 0:
 		output += "Plang"
-
 	# Return Pling in output if 7 is a factor
 	if n%7 == 0:
 		output += "Plong"
